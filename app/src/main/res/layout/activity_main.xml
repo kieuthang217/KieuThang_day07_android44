@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:background="#CCC8C8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/btnAddFragment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="@string/btn_add_text"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_width="1dp"
+            android:background="@color/black"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/btnDetailFragment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="@string/btn_detail"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</RelativeLayout>
